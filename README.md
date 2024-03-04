@@ -6,9 +6,9 @@
 
 [Деплой](https://deploy-preview-2--lambent-muffin-974f14.netlify.app/)
 
-ТЗ доступно по [ссылке](https://disk.yandex.ru/d/D_KydIXOVcsSnA)
-или тут
-ТЗ доступно по [ссылке](https://github.com/ValantisJewelry/TestTaskValantis)
+ТЗ доступно [тут](https://disk.yandex.ru/d/D_KydIXOVcsSnA)
+или
+ [тут](https://github.com/ValantisJewelry/TestTaskValantis)
 
 
 ![2](https://github.com/Zoldok/valantis/assets/129782617/e48be15f-0039-4129-88e5-7a51553c1d85)
