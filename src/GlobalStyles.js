@@ -38,19 +38,16 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #f1f1f1;
     overflow: auto;
 
-    scrollbar-width: thin; /* Толщина полосы прокрутки */
-    scrollbar-color: transparent transparent; /* Цвет полосы прокрутки */
-
     &::-webkit-scrollbar {
-      width: 1px; /* Ширина полосы прокрутки */
+      width: 1px; 
     }
 
     &::-webkit-scrollbar-track {
-      background-color: transparent; /* Цвет фона полосы прокрутки */
+      background-color: transparent; 
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: transparent; /* Цвет полосы прокрутки */
+      background-color: transparent; 
     }
   }
   

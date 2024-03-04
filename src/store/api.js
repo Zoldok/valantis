@@ -5,7 +5,7 @@ export async function getIds(offset, limit) {
   const timestamp = new Date().toISOString().split('T')[0].replace(/-/g, '');
   const authString = md5(`${password}_${timestamp}`);
 
-  const response = await fetch('http://api.valantis.store:40000', {
+  const response = await fetch('https://api.valantis.store:41000', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ export async function getPrise(ids) {
   const timestamp = new Date().toISOString().split('T')[0].replace(/-/g, '');
   const authString = md5(`${password}_${timestamp}`);
 
-  const response = await fetch('http://api.valantis.store:40000', {
+  const response = await fetch('https://api.valantis.store:41000', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ export async function getFields() {
   const timestamp = new Date().toISOString().split('T')[0].replace(/-/g, '');
   const authString = md5(`${password}_${timestamp}`);
 
-  const response = await fetch('http://api.valantis.store:40000', {
+  const response = await fetch('https://api.valantis.store:41000', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ export async function filterProductsByField(field, value) {
   const timestamp = new Date().toISOString().split('T')[0].replace(/-/g, '');
   const authString = md5(`${password}_${timestamp}`);
 
-  const response = await fetch('http://api.valantis.store:40000', {
+  const response = await fetch('https://api.valantis.store:41000', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

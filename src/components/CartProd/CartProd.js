@@ -7,7 +7,7 @@ import Preloader from '../Loader/Preloader';
 export const CardProd = ({ onButton }) => {
   const product = useSelector((state) => state.product.product);
   const [currentPage, setCurrentPage] = useState(1);
-  const cardsPerPage = 10;
+  const cardsPerPage = 50;
   const totalPages = Math.ceil(product.length / cardsPerPage);
 
   if (product.length === 0) {
