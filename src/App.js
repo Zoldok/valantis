@@ -12,9 +12,9 @@ export function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const ids = await getIds(1, 10, 'Valantis');
+        const ids = await getIds(1, 50, 'Valantis');
         const productData = await getPrise(ids, 'Valantis');
-
+console.log(productData);
         const uniquePrices = productData.filter(
           (prod, index, self) =>
             index === self.findIndex((p) => p.id === prod.id)

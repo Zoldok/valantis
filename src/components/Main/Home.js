@@ -17,7 +17,7 @@ export const Home = () => {
 
   const fetchData = async (offsetValue) => {
     try {
-      const ids = await getIds(offsetValue, 10, 'Valantis');
+      const ids = await getIds(offsetValue, 50, 'Valantis');
       const productData = await getPrise(ids, 'Valantis');
 
       const uniquePrices = productData.filter(
@@ -58,7 +58,7 @@ export const Home = () => {
           setOnButton={setOnButton}
         />
         <>
-          <S.ButtonContainter>
+          {/* <S.ButtonContainter>
             {' '}
             {offButton ? (
               <>
@@ -69,7 +69,18 @@ export const Home = () => {
             ) : (
               <></>
             )}
-          </S.ButtonContainter>
+          </S.ButtonContainter> */}
+          <S.ButtonContainter style={{ display: offButton ? 'flex' : 'none' }}>
+  {offButton ? (
+    <>
+      <S.Button onClick={handlePrevPage}>Назад</S.Button>
+      <S.Count>{count}</S.Count>
+      <S.Button onClick={handleNextPage}>Вперед</S.Button>
+    </>
+  ) : (
+    <></>
+  )}
+</S.ButtonContainter>
         </>
         <S.Container>
           {loading ? (
